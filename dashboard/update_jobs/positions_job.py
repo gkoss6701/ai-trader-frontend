@@ -13,9 +13,11 @@ from alpaca.trading.enums import AssetClass, AssetStatus
 load_dotenv(dotenv_path=None, verbose=True)
 
 # Configure Alpaca client
-ALPACA_API_KEY = os.getenv('ALPACA_API_KEY')
-ALPACA_SECRET_KEY = os.getenv('ALPACA_SECRET_KEY')
-ALPACA_PAPER = os.getenv('ALPACA_PAPER', 'true').lower() == 'true'
+ALPACA_API_KEY = os.getenv('ALPACA_PAPER_API_KEY')
+ALPACA_SECRET_KEY = os.getenv('ALPACA_PAPER_SECRET_KEY')
+ALPACA_PAPER = os.getenv('ALPACA_PAPER_TRADE', 'true').lower() == 'true'
+
+trading_client = TradingClient(api_key=ALPACA_API_KEY, secret_key=ALPACA_SECRET_KEY, paper=ALPACA_PAPER)
 
 # Set up data directory
 DATA_DIR = Path(__file__).parent.parent / 'data' / 'snapshots'
@@ -26,7 +28,7 @@ def fetch_alpaca_data():
     Fetch account data and positions from Alpaca API and save to JSON file
     """
     # Initialize Alpaca trading client
-    trading_client = TradingClient(ALPACA_API_KEY, ALPACA_SECRET_KEY, paper=ALPACA_PAPER)
+
     
     # Get account info
     account = trading_client.get_account()

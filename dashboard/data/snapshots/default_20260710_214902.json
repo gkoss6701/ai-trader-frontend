@@ -1,0 +1,53 @@
+{
+  "account": {
+    "id": "34d83ce6-05fa-4da0-bff7-16d0d115fe98",
+    "cash": 90015.75,
+    "portfolio_value": 99559.85,
+    "buying_power": 386786.49,
+    "currency": "USD",
+    "account_status": "ACTIVE",
+    "trading_blocked": false,
+    "equity": 99559.85,
+    "updated_at": "2026-07-10T21:49:02.492283"
+  },
+  "positions": [
+    {
+      "symbol": "BAX",
+      "qty": 321.0,
+      "market_value": 7182.5034,
+      "cost_basis": 7449.984675,
+      "unrealized_pl": -267.481275,
+      "unrealized_plpc": -0.0359,
+      "current_price": 22.3754,
+      "avg_entry_price": 23.208675,
+      "side": "long",
+      "exchange": "NYSE"
+    },
+    {
+      "symbol": "DLTR",
+      "qty": 16.0,
+      "market_value": 2000.0,
+      "cost_basis": 2004.0,
+      "unrealized_pl": -4.0,
+      "unrealized_plpc": -0.002,
+      "current_price": 125.0,
+      "avg_entry_price": 125.25,
+      "side": "long",
+      "exchange": "NASDAQ"
+    },
+    {
+      "symbol": "FTH",
+      "qty": 10.0,
+      "market_value": 361.6,
+      "cost_basis": 333.9,
+      "unrealized_pl": 27.7,
+      "unrealized_plpc": 0.08296,
+      "current_price": 36.16,
+      "avg_entry_price": 33.39,
+      "side": "long",
+      "exchange": "NASDAQ"
+    }
+  ],
+  "cash": 90015.75,
+  "timestamp": "2026-07-10T21:49:02.527293"
+}
